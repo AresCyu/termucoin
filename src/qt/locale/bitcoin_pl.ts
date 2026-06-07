@@ -217,7 +217,7 @@
         <translation>Portfel zaszyfrowany</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your dogecoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your termubits from being stolen by malware infecting your computer.</source>
         <translation>%1 zamknie się aby dokończyć proces szyfrowania. Pamiętaj, że szyfrowanie portfela nie zabezpiecza w pełni Twoich Termubitów przed kradzieżą przez wirusy lub trojany mogące zainfekować Twój komputer.</translation>
     </message>
     <message>
@@ -435,7 +435,7 @@
         <translation>Pasek zakładek</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
+        <source>Request payments (generates QR codes and termubit: URIs)</source>
         <translation>Żądaj płatności (generuje kod QR oraz Termubitowe URI)</translation>
     </message>
     <message>
@@ -447,7 +447,7 @@
         <translation>Pokaż listę adresów i etykiet użytych do odbierania</translation>
     </message>
     <message>
-        <source>Open a dogecoin: URI or payment request</source>
+        <source>Open a termubit: URI or payment request</source>
         <translation>Otwórz Termubitowe: URI lub żądanie zapłaty</translation>
     </message>
     <message>
@@ -1074,12 +1074,12 @@
         <translation>Nieznane. Synchronizowanie nagłówków (%1)...</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the dogecoin network, as detailed below.</source>
-        <translation>Ostatnie transakcje mogą nie być jeszcze widoczne, a zatem saldo portfela może być nieprawidłowe. Te informacje będą poprawne, gdy portfel zakończy synchronizację z siecią dogecoin, zgodnie z poniższym opisem.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the termubit network, as detailed below.</source>
+        <translation>Ostatnie transakcje mogą nie być jeszcze widoczne, a zatem saldo portfela może być nieprawidłowe. Te informacje będą poprawne, gdy portfel zakończy synchronizację z siecią termubit, zgodnie z poniższym opisem.</translation>
     </message>
     <message>
-        <source>Attempting to spend dogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Próba wydania dogecoinów, których dotyczą niewyświetlone jeszcze transakcje, nie zostanie zaakceptowana przez sieć.</translation>
+        <source>Attempting to spend termubits that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Próba wydania termubitów, których dotyczą niewyświetlone jeszcze transakcje, nie zostanie zaakceptowana przez sieć.</translation>
     </message>
 </context>
 <context>
@@ -1475,7 +1475,7 @@
         <translation>Aby zobaczyć ciągły rozwój i wnieść swój wkład, sprawdź repozytorium Termubit Core na GitHub</translation>
     </message>
     <message>
-        <source>Services that claim to double your dogecoins are always ponzi schemes</source>
+        <source>Services that claim to double your termubits are always ponzi schemes</source>
         <translation>Usługi, które obiecują podwoić Twoje monety Termubit, są zawsze schematami ponzi</translation>
     </message>
 </context>
@@ -1661,7 +1661,7 @@ p, li { white-space: pre-wrap; }
         <translation>Błąd żądania płatności</translation>
     </message>
     <message>
-        <source>Cannot start dogecoin: click-to-pay handler</source>
+        <source>Cannot start termubit: click-to-pay handler</source>
         <translation>Nie można uruchomić protokołu Termubit: kliknij-by-zapłacić</translation>
     </message>
     <message>
@@ -2547,7 +2547,7 @@ Use this functionality with extreme caution.</source>
         <translation>razem przynajmniej</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for dogecoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for termubit transactions than the network can process.</source>
         <translation>Zapłacenie tylko minimalnej opłaty jest nadal wystarczające, dopóki jest mniejszy wolumen transakcji niż miejsca w blokach. Należy jednak mieć świadomość, że może skończyć się to niezatwierdzeniem nigdy transakcji, gdy jest większe zapotrzebowanie na transakcje Termubita niż sieć może przetworzyć.</translation>
     </message>
     <message>
@@ -2790,7 +2790,7 @@ Use this functionality with extreme caution.</source>
         <translation>Usuń ten wpis</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less dogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less termubits than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation>Opłata zostanie odjęta od kwoty wysyłanej. Odbiorca otrzyma mniej niż Termubitów wpisanych w polu kwoty. Jeśli wybrano kilku odbiorców, opłata jest podzielona równo.</translation>
     </message>
     <message>
@@ -2814,7 +2814,7 @@ Use this functionality with extreme caution.</source>
         <translation>Wprowadź etykietę dla tego adresu by dodać go do listy użytych adresów</translation>
     </message>
     <message>
-        <source>A message that was attached to the dogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Termubit network.</source>
+        <source>A message that was attached to the termubit: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Termubit network.</source>
         <translation>Wiadomość, która została dołączona do URI Termubita, która będzie przechowywana wraz z transakcją w celach informacyjnych. Uwaga: Ta wiadomość nie będzie rozsyłana w sieci Termubit.</translation>
     </message>
     <message>
@@ -2859,7 +2859,7 @@ Use this functionality with extreme caution.</source>
         <translation>Podpi&amp;sz Wiadomość</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive dogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive termubits sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation>Możesz podpisywać wiadomości swoimi adresami aby udowodnić, że jesteś ich właścicielem. Uważaj, aby nie podpisywać niczego co wzbudza Twoje podejrzenia, ponieważ ktoś może stosować phishing próbując nakłonić Cię do ich podpisania. Akceptuj i podpisuj tylko w pełni zrozumiałe komunikaty i wiadomości.</translation>
     </message>
     <message>
