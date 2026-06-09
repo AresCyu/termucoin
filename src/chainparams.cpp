@@ -401,8 +401,8 @@ public:
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
-        assert(consensus.hashGenesisBlock == uint256S("0x0750aecdcab99b35db17d6aa230e191749faa1d822dbd714217d2d1140e653a7"));
-        assert(genesis.hashMerkleRoot == uint256S("0x873be58f7caf71c8b1f08dcac7746e9d79c484703e0bc3a3fc1712400a3d5771"));
+        assert(consensus.hashGenesisBlock == uint256S("0x0ffe17919e5ab4772105adda654115dd849df167413fd46c79ec38a76d32b1bf"));
+        assert(genesis.hashMerkleRoot == uint256S("0xd3b94512c4788accd135f45bba9a6045322c4ec33897076c29f0e787bb35a977"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
