@@ -284,13 +284,13 @@ public:
         nDefaultPort = 12253;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1391503289, 381624, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1773223200, 381624, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         digishieldConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         minDifficultyConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         auxpowConsensus.hashGenesisBlock = consensus.hashGenesisBlock;
         assert(consensus.hashGenesisBlock == uint256S("0x00000937cdbf9936fb1338bdb7ae61798c6d761d1d436606adef9a8bce33b6b4"));
-        assert(genesis.hashMerkleRoot == uint256S("0x873be58f7caf71c8b1f08dcac7746e9d79c484703e0bc3a3fc1712400a3d5771"));
+        assert(genesis.hashMerkleRoot == uint256S("0xd3b94512c4788accd135f45bba9a6045322c4ec33897076c29f0e787bb35a977"));
 
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
@@ -311,12 +311,12 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, uint256S("0x00000ccb8c7b7da40e6acb5372f01395da0724a443fd36db899b1d85c3ffae61"))
+            ( 0, uint256S("0x"))
         };
 
         chainTxData = ChainTxData{
             // Data as of block 199bea6a442310589cbb50a193a30b097c228bd5a0f21af21e4e53dd57c382d3 (height 5,900,000)
-            1703511130, // * UNIX timestamp of last checkpoint block
+            1773223200, // * UNIX timestamp of last checkpoint block
             7391928,    // * total number of transactions between genesis and last checkpoint
             0.04        // * estimated number of transactions per second after that timestamp
         };
