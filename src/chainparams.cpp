@@ -181,7 +181,7 @@ public:
         chainTxData = ChainTxData{
             // Data as of block e7d4577405223918491477db725a393bcfc349d8ee63b0a4fde23cbfbfd81dea (height 5050000).
             // Tx estimate based on average between 2023-01-16 (92752025 at 4556625) and 2024-01-16 (226128837 at 5050000)
-            1778144017, // * UNIX timestamp of last checkpoint block
+            1773223200, // * UNIX timestamp of last checkpoint block
             0,   // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             0.        // * estimated number of transactions per second after checkpoint
