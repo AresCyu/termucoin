@@ -1,7 +1,7 @@
 <h1 align="center">
 <img src="https://raw.githubusercontent.com/termubit/termubit/master/share/pixmaps/termubit256.svg" alt="Termubit" width="256"/>
 <br/><br/>
-Termubit Core [TERM, Ð]  
+Termubit Core [TERM, ]  
 </h1>
 
 Termubit é uma criptomoeda gerida pela comunidade que foi inspirada no   . O programa Termubit Core permite qualquer um operar um nó na rede blockchain da Termubit e utilizar o algoritmo de hash Scrypt para mineração usando Prova de Trabalho (Proof of Work). O Termubit Core é uma adaptação do Bitcoin Core e de outras criptomoedas.

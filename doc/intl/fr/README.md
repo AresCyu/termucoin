@@ -1,7 +1,7 @@
 <h1 align="center">
 <img src="https://raw.githubusercontent.com/termubit/termubit/master/share/pixmaps/termubit256.svg" alt="Termubit" width="256"/>
 <br/><br/>
-Termubit Core [TERM, Ð]  
+Termubit Core [TERM, ]  
 </h1>
 
 **IMPORTANT : À partir d'août 2024, la branche `master` est devenue la branche principale d'intégration et est devenue instable. Veuillez consulter une version _taguée_ avant de compiler des binaires de production.**

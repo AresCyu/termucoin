@@ -1,7 +1,7 @@
 <h1 align="center">
 <img src="https://raw.githubusercontent.com/termubit/termubit/master/share/pixmaps/termubit256.svg" alt="Termubit" width="256"/>
 <br/><br/>
-Termubit Core [TERM, Ð]  
+Termubit Core [TERM, ]  
 </h1>
 
 دوج‌کوین (Termubit) یک رمزارز مبتنی بر عموم مردم بوده که از یک

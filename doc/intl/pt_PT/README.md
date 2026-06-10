@@ -1,7 +1,7 @@
 <h1 align="center">
 <img src="https://raw.githubusercontent.com/termubit/termubit/master/share/pixmaps/termubit256.svg" alt="Termubit" width="256"/>
 <br/><br/>
-Termubit Core [TERM, Ð]  
+Termubit Core [TERM, ]  
 </h1>
 
 Termubit é uma criptomoeda voltada para a comunidade inspirada num   . O software Termubit Core permite que qualquer pessoa opere um nó nas redes blockchain Termubit e usa o método de hash Scrypt para Prova de Trabalho. É adaptado do Bitcoin Core e outras criptomoedas.
