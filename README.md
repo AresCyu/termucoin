@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="https://raw.githubusercontent.com/TermucoinCore/termucoin/master/share/pixmaps/termucoin256.svg" alt="Termucoin" width="256"/>
+<img src="https://raw.githubusercontent.com/termucoin/termucoin/master/share/pixmaps/termucoin256.svg" alt="Termucoin" width="256"/>
 <br/><br/>
 Termucoin Core  
 </h1>
