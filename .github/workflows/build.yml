@@ -33,13 +33,13 @@ jobs:
       - name: Build
         run: |
           sudo apt-get update && sudo apt-get install -y mingw-w64 build-essential libtool autotools-dev automake pkg-config bsdmainutils python3
-          # Membersihkan build sebelumnya di folder depends
+          # Build library windows di folder depends
           cd depends
-          make clean
           make HOST=x86_64-w64-mingw32 -j$(nproc)
           cd ..
+          # Setup environment
           ./autogen.sh
-          # Menambahkan CXXFLAGS C++14 dan mematikan ZMQ secara eksplisit
+          # Konfigurasi dengan flag C++14 dan disable fitur berat
           ./configure --prefix=`pwd`/depends/x86_64-w64-mingw32 --disable-tests --disable-wallet --without-gui --disable-bench --disable-zmq CXXFLAGS="-std=c++14"
           make -j$(nproc)
       - name: Upload Binary
