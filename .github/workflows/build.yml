@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
       - name: Install dependencies
         run: sudo apt-get update && sudo apt-get install -y build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils libboost-all-dev libdb-dev libdb++-dev
       - name: Build
@@ -27,15 +29,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-        submodules: recursive
+          submodules: recursive
       - name: Build
         run: |
           sudo apt-get update && sudo apt-get install -y mingw-w64 build-essential libtool autotools-dev automake pkg-config bsdmainutils python3
+          # Membersihkan build sebelumnya di folder depends
           cd depends
+          make clean
           make HOST=x86_64-w64-mingw32 -j$(nproc)
           cd ..
           ./autogen.sh
-          ./configure --prefix=`pwd`/depends/x86_64-w64-mingw32 --disable-tests --disable-zmq --disable-wallet --without-gui --disable-bench CXXFLAGS="-std=c++14"
+          # Menambahkan CXXFLAGS C++14 dan mematikan ZMQ secara eksplisit
+          ./configure --prefix=`pwd`/depends/x86_64-w64-mingw32 --disable-tests --disable-wallet --without-gui --disable-bench --disable-zmq CXXFLAGS="-std=c++14"
           make -j$(nproc)
       - name: Upload Binary
         uses: actions/upload-artifact@v4
