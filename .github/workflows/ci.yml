@@ -132,3 +132,15 @@ jobs:
       image: ${{ matrix.container }}
       options: ${{ matrix.container-options == '' && '-e 1DOGE=1DOGE' || matrix.container-options }}
       
+    steps:
+      - name: Configure container
+        run: |
+          ln -snf /usr/share/zoneinfo/Etc/UTC /etc/localtime
+          echo Etc/UTC > /etc/timezone
+          mkdir -p $WINEPREFIX
+          uname -a
+
+      - name: Pre install
+        if: ${{ matrix.preinstall }}
+        run: ${{ matrix.preinstall }}
+        
