@@ -1,0 +1,41 @@
+name: Full Build Matrix
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        target:
+          - { name: "x86_64-macos", os: "macos-latest", flags: "" }
+          - { name: "x86_64-win-exp", os: "windows-latest", flags: "--enable-experimental" }
+          - { name: "x86_64-linux-nowallet", os: "ubuntu-latest", flags: "--disable-wallet" }
+          - { name: "x86_64-linux-exp", os: "ubuntu-latest", flags: "--enable-experimental" }
+          - { name: "x86_64-linux-dbg", os: "ubuntu-latest", flags: "--enable-debug" }
+          - { name: "i686-win", os: "ubuntu-latest", flags: "--host=i686-w64-mingw32" }
+          - { name: "armhf-linux", os: "ubuntu-latest", flags: "--host=arm-linux-gnueabihf" }
+          - { name: "aarch64-linux-exp", os: "ubuntu-latest", flags: "--host=aarch64-linux-gnu --enable-experimental" }
+          - { name: "aarch64-linux", os: "ubuntu-latest", flags: "--host=aarch64-linux-gnu" }
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential autotools-dev automake pkg-config \
+          g++-aarch64-linux-gnu g++-arm-linux-gnueabihf g++-mingw-w64-i686 \
+          libboost-all-dev libdb-dev libssl-dev libevent-dev
+
+      - name: Build
+        run: |
+          ./autogen.sh
+          ./configure --with-incompatible-bdb --disable-tests --disable-bench CXXFLAGS="-std=c++14" ${{ matrix.target.flags }}
+          make -j$(nproc)
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: bcoin-${{ matrix.target.name }}
+          path: src/bcoind*
