@@ -280,7 +280,7 @@ def test_locked_wallet_fails(rbf_node, dest_address):
 
 def test_termucoin_wallet_minchange(rbf_node, dest_address):
     input = Decimal("10.00000000")
-    discard_threshold = Decimal("0.00001000")    # DEFAULT_DISCARD_THRESHOLD
+    discard_threshold = Decimal("0.00000500")    # DEFAULT_DISCARD_THRESHOLD
     min_fee = Decimal("0.00001000")              # DEFAULT_TRANSACTION_FEE
     min_change = discard_threshold + 2 * min_fee # MIN_CHANGE
     bumpfee = Decimal("0.00001")                   # WALLET_INCREMENTAL_RELAY_FEE
