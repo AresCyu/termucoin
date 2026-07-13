@@ -57,25 +57,8 @@ static const CAmount DEFAULT_FALLBACK_FEE = RECOMMENDED_MIN_TX_FEE;
 //! -mintxfee default
 static const CAmount DEFAULT_TRANSACTION_MINFEE = RECOMMENDED_MIN_TX_FEE;
 //! -discardthreshold default
-/* 1.14.5: set the wallet's discard threshold to 1 TERM because that's what 97%
- *         of the network currently implements as the hard dust limit. This
- *         value can be changed when a significant portion of the relay network
- *         and miners have adopted a different hard dust limit.
- */
-/* 1.14.6: set the wallet's discard threshold to 0.00001 TERM. Very network
- *         adoption of new hard dust limit
- */
 static const CAmount DEFAULT_DISCARD_THRESHOLD = COIN / 100000;
-
 //! minimum recommended increment for BIP 125 replacement txs
-/*
- * Termucoin: Scaled to 1/10th of the recommended transaction fee to make RBF
- * cheaper than CPFP. This reduces onchain pollution by encouraging transactions
- * to be replaced in the mempool, rather than be respent by another transaction
- * which then both would have to be mined, taking up block space and increasing
- * the amount of data that needs to be synchronized when validating the chain.
- * This way, replacements for fee bumps are transient rather than persisted.
- */
 static const CAmount WALLET_INCREMENTAL_RELAY_FEE = RECOMMENDED_MIN_TX_FEE / 5000;
 /*
  * Termucoin: Creating change outputs at exactly the dustlimit is counter-
