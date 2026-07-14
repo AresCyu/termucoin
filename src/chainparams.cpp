@@ -59,7 +59,6 @@ static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits
 /**
  * Main network
  */
-
 class CMainParams : public CChainParams {
 private:
     Consensus::Params digishieldConsensus;
